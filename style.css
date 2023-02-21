@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: boder-box;
+}
+
+h2{
+    font-family:'Big Shoulders Display';
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:40px;
+    color:hsl(0, 0%, 95%)
+    /* padding-bottom:120px; */
+}
+
+p{
+    display:inline-block;
+    width:210px;
+    text-align: left;
+    font-family:'Lexend Deca';
+    font-weight:400;
+    font-size:15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8em;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    margin:auto;
+}
+
+.container{
+    display:flex;
+    justify-content: space-around;
+    margin: auto;
+    width:920px;
+    height:500px;
+    align-items:center;
+}
+
+.item-1,.item-2,.item-3{
+    width:100%;
+    height:100%;
+    
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 45px;
+}
+
+.item-1{
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 15px 0 0 15px;
+}
+.item-2{
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.item-3{
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(179, 100%, 13%);
+    border-radius:0 15px 15px 0;
+}
+
+.btn{
+    width:100%;
+}
+button{
+    background-color:white;
+    border:none;
+    color:inherit;
+	border-radius:28px;
+	cursor:pointer;
+	padding:16px 31px;
+	
+}
+
+button:active{
+    border:1px solid white;
+    color:white;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        margin: auto;
+        margin-top:0px;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+     .item-1, .item-2,.item-3{
+        border-radius: 0;
+        align-items: center;
+     }
+    .btn{
+        text-align: center;
+    }
+}
+
